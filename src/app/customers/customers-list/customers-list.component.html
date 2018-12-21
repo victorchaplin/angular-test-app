@@ -9,13 +9,13 @@
             <th>Order Total</th>
         </tr>
     </thead>
-    <tr>
+    <tr *ngFor="let customers of filteredCustomers">
         <td>
             <a>
-                
+                {{ cust.name }}
             </a>
         </td>
-        <td></td>
+        <td>{{ cust.city}}</td>
         <td></td>
     </tr>
     <tr>
